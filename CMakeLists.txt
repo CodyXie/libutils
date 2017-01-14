@@ -8,8 +8,8 @@ aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR} LIBUTILS_SRCS)
 include_directories(${utils_SOURCE_DIR}/include)
 
 add_library(utils
-	SHARED
-    ${LIBUTILS_SRCS}
-    )
+	STATIC
+	${LIBUTILS_SRCS}
+	)
 
 target_link_libraries(utils log)
