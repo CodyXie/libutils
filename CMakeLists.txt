@@ -13,3 +13,6 @@ add_library(utils
 	)
 
 target_link_libraries(utils log)
+
+install(TARGETS utils ARCHIVE DESTINATION lib)
+install(DIRECTORY ${utils_SOURCE_DIR}/include/utils DESTINATION include)
